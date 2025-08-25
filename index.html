@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltOne | Charge Anywhere with One App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00f5a0',
+                        secondary: '#00d9f5',
+                        dark: '#0a0a0a',
+                        darker: '#050505',
+                        light: '#f5f5f5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span class="text-2xl font-bold">Volt<span class="gradient-text">One</span></span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+            <a href="#features" class="hover:text-primary transition-colors">Features</a>
+            <a href="#how-it-works" class="hover:text-primary transition-colors">How It Works</a>
+            <a href="#faq" class="hover:text-primary transition-colors">FAQ</a>
+        </div>
+        <button class="bg-primary text-dark px-6 py-2 rounded-full font-medium hover:bg-opacity-90 transition-all">
+            Join Waitlist
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-20 md:py-32">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    Charge Anywhere. <br>
+                    <span class="gradient-text">One App.</span>
+                </h1>
+                <p class="text-lg text-gray-400 mb-8 max-w-lg">
+                    VoltOne unifies all Indian EV charging networks into a single app. Load funds once and charge at any supported station without the hassle of multiple accounts.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-primary text-dark px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+                        Join Waitlist
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center animate-float">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-primary to-secondary rounded-xl opacity-20 blur"></div>
+                    <div class="relative bg-dark rounded-xl p-2 border border-gray-800">
+                        <img src="/LOGO.png" 
+                             alt="EV Charging in India" 
+                             class="rounded-lg w-full max-w-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container mx-auto px-6 py-20 md:py-32">
+        <div class="text-center mb-20">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose <span class="gradient-text">VoltOne</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">The simplest way to charge your EV across all Indian networks</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 card-glow transition-all hover:border-primary">
+                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Pan-India Access</h3>
+                <p class="text-gray-400">Charge at any supported station across India. No more juggling between multiple apps and memberships.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 card-glow transition-all hover:border-primary">
+                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Unified Payments</h3>
+                <p class="text-gray-400">Load funds once and use across all networks. Supports UPI, credit cards, and popular Indian payment methods.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 card-glow transition-all hover:border-primary">
+                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Smart Routing</h3>
+                <p class="text-gray-400">Find the optimal charger based on your route, car model, and current battery level across Indian cities.</p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 card-glow transition-all hover:border-primary">
+                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Real-time Stats</h3>
+                <p class="text-gray-400">Track your charging history, costs, and carbon savings all in one place with Indian rupee calculations.</p>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 card-glow transition-all hover:border-primary">
+                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Fast Check-in</h3>
+                <p class="text-gray-400">Start charging in seconds with QR code scan or auto-detection when you plug in at any partner station.</p>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="bg-darker p-8 rounded-xl border border-gray-800 card-glow transition-all hover:border-primary">
+                <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Seamless Integration</h3>
+                <p class="text-gray-400">Works with popular Indian EV models and navigation systems.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="bg-darker py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How <span class="gradient-text">VoltOne</span> Works</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Get started in just a few simple steps</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6 text-primary font-bold text-xl">1</div>
+                    <h3 class="text-xl font-semibold mb-3">Join Waitlist</h3>
+                    <p class="text-gray-400">Be among the first to experience unified EV charging in India when we launch.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6 text-primary font-bold text-xl">2</div>
+                    <h3 class="text-xl font-semibold mb-3">Download at Launch</h3>
+                    <p class="text-gray-400">Get the app from Play Store or App Store when we go live.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mb-6 text-primary font-bold text-xl">3</div>
+                    <h3 class="text-xl font-semibold mb-3">Charge Anywhere</h3>
+                    <p class="text-gray-400">Use your single VoltOne account at all partner stations across India.</p>
+                </div>
+            </div>
+    </section>
+
+<!-- FAQ Section -->
+<section id="faq" class="container mx-auto px-6 py-20 md:py-32">
+    <div class="text-center mb-20">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Everything you need to know about VoltOne</p>
+    </div>
+    
+    <div class="max-w-3xl mx-auto">
+        <!-- FAQ Item 1 -->
+        <div class="mb-6 border-b border-gray-800 pb-6">
+            <button class="flex justify-between items-center w-full text-left">
+                <h3 class="text-xl font-medium">Which Indian charging networks will VoltOne support?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="mt-4 text-gray-400">
+                <p>VoltOne will support major Indian networks including Jio BP, Bharat Petroleum, IndianOil, Statiq, Tata Power, and others. We're working to onboard all major charging providers in India.</p>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="mb-6 border-b border-gray-800 pb-6">
+            <button class="flex justify-between items-center w-full text-left">
+                <h3 class="text-xl font-medium">How will payments work?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="mt-4 text-gray-400">
+                <p>You'll be able to add funds to your VoltOne wallet using UPI, credit/debit cards, and other popular Indian payment methods. When you charge at any supported station, the cost will be deducted from your wallet balance.</p>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="mb-6 border-b border-gray-800 pb-6">
+            <button class="flex justify-between items-center w-full text-left">
+                <h3 class="text-xl font-medium">When will VoltOne launch in India?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="mt-4 text-gray-400">
+                <p>We're currently in development and plan to launch in major Indian cities by early 2024. Join our waitlist to get early access when we go live.</p>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="mb-6 border-b border-gray-800 pb-6">
+            <button class="flex justify-between items-center w-full text-left">
+                <h3 class="text-xl font-medium">Will there be any subscription fees?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="mt-4 text-gray-400">
+                <p>No, VoltOne will be free to download and use. You only pay for the charging sessions you use at standard network rates.</p>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 5 -->
+        <div class="mb-6">
+            <button class="flex justify-between items-center w-full text-left">
+                <h3 class="text-xl font-medium">How can I support this initiative?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
+            <div class="mt-4 text-gray-400">
+                <p>Join our waitlist and share with other EV owners in India. The more interest we show, the faster we can bring this solution to market.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA Section -->
+<section class="py-20 md:py-32 relative overflow-hidden bg-gradient-to-br from-dark to-darker">
+        <div class="absolute inset-0 opacity-5 pattern-bg"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Join India's EV Charging <span class="gradient-text">Revolution</span></h2>
+                <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">Be among the first to experience seamless charging across all Indian networks.</p>
+                
+                <div id="final-waitlist-form" class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center">
+                    <input id="final-waitlist-email" type="email" placeholder="Enter your email" class="px-6 py-3 rounded-full text-dark flex-1 max-w-md border-0 focus:ring-2 focus:ring-primary" />
+                    <button id="final-waitlist-submit" class="bg-primary text-dark px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+                        Join Waitlist Now
+                    </button>
+                </div>
+                <p id="final-waitlist-msg" class="mt-4 text-sm text-gray-400"></p>
+            </div>
+        </div>
+    </section>
+
+<!-- Simplified Footer -->
+<footer class="bg-darker py-16 border-t border-gray-800">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0">
+                <div class="flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span class="text-2xl font-bold">Volt<span class="gradient-text">One</span></span>
+                </div>
+            </div>
+            
+            <div class="mb-8 md:mb-0 text-center">
+                <p class="text-gray-400">Simplifying EV charging across India</p>
+            </div>
+            
+            <div>
+                <p class="text-gray-500">© 2023 VoltOne. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
